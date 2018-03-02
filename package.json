@@ -1,6 +1,6 @@
 {
   "name": "ngx-forge",
-  "version": "0.0.53-development",
+  "version": "0.0.55-development",
   "description": "Forge services for Angular v2 and up",
   "main": "bundles/ngx-forge.js",
   "module": "bundles/ngx-forge.js",
@@ -12,7 +12,7 @@
     "bundle": "rollup -c",
     "bundle-webpack": "webpack --config config/webpack.prod.js --progress --profile --bail",
     "clean-dist": "rimraf dist dist-watch",
-    "clean": "npm cache clean && npm run rimraf -- node_modules doc coverage dist bundles",
+    "clean": "npm run rimraf -- node_modules doc coverage dist bundles",
     "cleanup": "rimraf dist/package.json dist/bundles dist/src dist/index.d.ts dist/index.metadata.json dist/index.js dist/index.js.map dist/LICENSE dist/README.md",
     "copy-files": "gulp copyfiles",
     "minify": "uglifyjs dist/bundles/ngx-forge.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngx-forge.umd.min.js",
